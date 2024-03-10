@@ -99,6 +99,7 @@ double cfdCoreModelMainLevelAc1(int nITERATION, gtypeHm4CfdHostCore *cfdCore, pm
 	return totalTime;
 }
 
+// CASA
 double cfdCoreModelMainAc1(int nITERATION, gtypeHm4CfdHostCore *cfdCore, pm18MpiTopologyType mpiTopology)
 {
 	double timerStart, timerFinish, taskTime, totalTime;
@@ -199,6 +200,7 @@ double cfdCoreModelMainAc1(int nITERATION, gtypeHm4CfdHostCore *cfdCore, pm18Mpi
 
 	return totalTime;
 }
+// CASA
 
 double cfdCoreModelMainLevelAc2(int nITERATION, gtypeHm4CfdHostCore *cfdCore, pm18MpiTopologyType mpiTopology)
 {

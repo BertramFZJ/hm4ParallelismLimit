@@ -158,8 +158,12 @@ int main(int argc, char *argv[])
 		if(_LEVELS_NUMBER_ >  1)
 			taskTime = cfdCoreModelMainLevelAc1(_ITERATIONS_NUMBER_, &cfdCoreHost, mpiTopology);
 
+		// CASA
+		fprintf(stderr, "CASA: --- MainAc1 ---\n");
 		if(_LEVELS_NUMBER_ == 1)
 			taskTime = cfdCoreModelMainAc1     (_ITERATIONS_NUMBER_, &cfdCoreHost, mpiTopology);
+		fprintf(stderr, "CASA: *** MainAc1 ***\n");
+		// CASA
 	}
 
 

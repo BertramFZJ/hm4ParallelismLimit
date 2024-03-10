@@ -6,13 +6,13 @@ CC = mpicc
 OPTFLAGS = -O2 
 
 # Include directories for the compiler
-INCDIR = -I./ -I./../../winmpilib
+INCDIR = -I./
 
 # What options to be used by the compiler
 COPTIONS = 
 
 # Which loader to use
-LD = gcc
+LD = mpicc
 
 # In which directories to look for any additional libraries
 LIBDIR = -L/opt/local/lib -L/usr/lib

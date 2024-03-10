@@ -159,7 +159,13 @@ int hm4SerialMeshPreprocessorCfdMPI(char *fname,
 		csrPartParMetisV4NoWeightsMPI(eDIST, xCSR, aCSR, nPART, part, stderr, comm);
 		// дейнлонгхжхъ цпютю я беяюлх бепьхм, пюбмшлх вхякс нохпючыхуяъ мю бепьхмс пеаеп цпютю
 		if(1)
-		csrPartParMetisV4NodesWeightsByCsrEdgesMPI(eDIST, xCSR, aCSR, nPART, part, stderr, comm);		
+		{
+			// CASA
+			fprintf(stderr, "CASA: --- WeightDecomposition ---\n");
+			csrPartParMetisV4NodesWeightsByCsrEdgesMPI(eDIST, xCSR, aCSR, nPART, part, stderr, comm);
+			fprintf(stderr, "CASA: *** WeightDecomposition ***\n");
+			// CASA
+		}		
 
 
 		fflush(stdout); fflush(stderr); MPI_Barrier(comm);
